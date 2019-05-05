@@ -10,7 +10,7 @@ This program generated the .csv file got 2.99 Kaggle score.
 LightGBM_5400000rows.csv
 This file is the one submitted to Kaggle.
 
-3 .png
+the 3 .png files
 needed for all .py to print out points on maps
 
 train.csv & test.csv
