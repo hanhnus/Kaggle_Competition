@@ -1,3 +1,6 @@
+Kaggle Competition Report - New York City Taxi Fare Prediction .pdf
+records the details of the modelling, from data exploring, understanding, cleansing & visualisation, feature manipulation & aggregation to model developing & testing. 
+
 ZonesDevelopment.py
 is only for functions development, especially for the NYC zoning function.
 
