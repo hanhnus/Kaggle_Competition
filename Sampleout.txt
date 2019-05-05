@@ -1,0 +1,234 @@
+Training Set Data Reading Start:  2018-09-21 12:00:02
+Reading 300000 rows...
+info:
+<class 'pandas.core.frame.DataFrame'>
+Index: 300000 entries, 2009-06-15 17:26:21.0000001 to 2015-03-14 13:35:54.0000006
+Data columns (total 7 columns):
+fare_amount          300000 non-null float64
+pickup_datetime      300000 non-null datetime64[ns, UTC]
+pickup_longitude     300000 non-null float64
+pickup_latitude      300000 non-null float64
+dropoff_longitude    299998 non-null float64
+dropoff_latitude     299998 non-null float64
+passenger_count      300000 non-null int64
+dtypes: datetime64[ns, UTC](1), float64(5), int64(1)
+memory usage: 18.3+ MB
+None
+describe:
+         fare_amount  pickup_longitude  pickup_latitude  dropoff_longitude  dropoff_latitude  passenger_count
+count  300000.000000     300000.000000    300000.000000      299998.000000     299998.000000    300000.000000
+mean       11.359876        -72.523230        39.928171         -72.529448         39.927360         1.684403
+std         9.932815         11.325144         8.953498          10.914682          6.546706         1.309132
+min       -44.900000       -740.000000     -3116.285383       -1329.621332      -1189.615440         0.000000
+25%         6.000000        -73.992050        40.734985         -73.991350         40.734059         1.000000
+50%         8.500000        -73.981762        40.752737         -73.980116         40.753185         1.000000
+75%        12.500000        -73.967097        40.767108         -73.963565         40.768095         2.000000
+max       500.000000       2140.601160      1703.092772          40.851027        404.616667         6.000000
+isnull.sum:
+fare_amount          0
+pickup_datetime      0
+pickup_longitude     0
+pickup_latitude      0
+dropoff_longitude    2
+dropoff_latitude     2
+passenger_count      0
+dtype: int64
+                               fare_amount           pickup_datetime  pickup_longitude  pickup_latitude  dropoff_longitude  dropoff_latitude  passenger_count
+key
+2009-06-15 17:26:21.0000001            4.5 2009-06-15 17:26:00+00:00        -73.844311        40.721319         -73.841610         40.712278                1
+2010-01-05 16:52:16.0000002           16.9 2010-01-05 16:52:00+00:00        -74.016048        40.711303         -73.979268         40.782004                1
+2011-08-18 00:35:00.00000049           5.7 2011-08-18 00:35:00+00:00        -73.982738        40.761270         -73.991242         40.750562                2
+2012-04-21 04:30:42.0000001            7.7 2012-04-21 04:30:00+00:00        -73.987130        40.733143         -73.991567         40.758092                1
+2010-03-09 07:51:00.000000135          5.3 2010-03-09 07:51:00+00:00        -73.968095        40.768008         -73.956655         40.783762                1
+                               fare_amount           pickup_datetime  pickup_longitude  pickup_latitude  dropoff_longitude  dropoff_latitude  passenger_count
+key
+2015-03-17 10:39:36.0000004            4.5 2015-03-17 10:39:00+00:00        -74.002090        40.729954         -73.995422         40.739185                2
+2012-10-01 09:59:32.0000001            9.0 2012-10-01 09:59:00+00:00        -74.003177        40.747336         -73.983265         40.746194                1
+2012-12-10 21:59:00.000000197         11.0 2012-12-10 21:59:00+00:00        -73.988432        40.720217         -73.994832         40.746707                1
+2014-03-03 11:14:53.0000001            5.5 2014-03-03 11:14:00+00:00        -73.980647        40.721606         -73.994044         40.727628                1
+2015-03-14 13:35:54.0000006            6.0 2015-03-14 13:35:00+00:00        -73.958839        40.815304         -73.966675         40.804443                4
+Training Set Data Reading Finish: 2018-09-21 12:00:04
+----------
+Test Set Data Reading Start:  2018-09-21 12:00:04
+<class 'pandas.core.frame.DataFrame'>
+Index: 9914 entries, 2015-01-27 13:08:24.0000002 to 2015-01-18 14:06:23.0000006
+Data columns (total 6 columns):
+pickup_datetime      9914 non-null datetime64[ns, UTC]
+pickup_longitude     9914 non-null float64
+pickup_latitude      9914 non-null float64
+dropoff_longitude    9914 non-null float64
+dropoff_latitude     9914 non-null float64
+passenger_count      9914 non-null int64
+dtypes: datetime64[ns, UTC](1), float64(4), int64(1)
+memory usage: 542.2+ KB
+None
+       pickup_longitude  pickup_latitude  dropoff_longitude  dropoff_latitude  passenger_count
+count       9914.000000      9914.000000        9914.000000       9914.000000      9914.000000
+mean         -73.974722        40.751041         -73.973657         40.751743         1.671273
+std            0.042774         0.033541           0.039072          0.035435         1.278747
+min          -74.252193        40.573143         -74.263242         40.568973         1.000000
+25%          -73.992501        40.736125         -73.991247         40.735254         1.000000
+50%          -73.982326        40.753051         -73.980015         40.754065         1.000000
+75%          -73.968013        40.767113         -73.964059         40.768757         2.000000
+max          -72.986532        41.709555         -72.990963         41.696683         6.000000
+                                      pickup_datetime  pickup_longitude  pickup_latitude  dropoff_longitude  dropoff_latitude  passenger_count
+key
+2015-01-27 13:08:24.0000002 2015-01-27 13:08:00+00:00        -73.973320        40.763805         -73.981430         40.743835                1
+2015-01-27 13:08:24.0000003 2015-01-27 13:08:00+00:00        -73.986862        40.719383         -73.998886         40.739201                1
+2011-10-08 11:53:44.0000002 2011-10-08 11:53:00+00:00        -73.982524        40.751260         -73.979654         40.746139                1
+2012-12-01 21:12:12.0000002 2012-12-01 21:12:00+00:00        -73.981160        40.767807         -73.990448         40.751635                1
+2012-12-01 21:12:12.0000003 2012-12-01 21:12:00+00:00        -73.966046        40.789775         -73.988565         40.744427                1
+                                      pickup_datetime  pickup_longitude  pickup_latitude  dropoff_longitude  dropoff_latitude  passenger_count
+key
+2015-05-10 12:37:51.0000002 2015-05-10 12:37:00+00:00        -73.968124        40.796997         -73.955643         40.780388                6
+2015-01-12 17:05:51.0000001 2015-01-12 17:05:00+00:00        -73.945511        40.803600         -73.960213         40.776371                6
+2015-04-19 20:44:15.0000001 2015-04-19 20:44:00+00:00        -73.991600        40.726608         -73.789742         40.647011                6
+2015-01-31 01:05:19.0000005 2015-01-31 01:05:00+00:00        -73.985573        40.735432         -73.939178         40.801731                6
+2015-01-18 14:06:23.0000006 2015-01-18 14:06:00+00:00        -73.988022        40.754070         -74.000282         40.759220                6
+Test Set Data Reading Finish: 2018-09-21 12:00:04
+----------
+2018-09-21 12:00:04  Data Cleansing 1    After drop rows with missing data :                  299998
+2018-09-21 12:00:04  Data Cleansing 2    After drop fare_amount < 2.5 directly:               299969
+2018-09-21 12:00:04  Data Cleansing 3    After drop fare_amount count <= 1 :                  299464
+Longitude  (x) Range:  1.4 deg
+Latitude   (y) Range:  1.3 deg
+2018-09-21 12:00:04  Data Cleansing 4    After drop data out of test_set coordinate range :   293236
+2018-09-21 12:00:04  Data Cleansing 5    After drop pickup dropoff same coordinate :          290117
+2018-09-21 12:00:06  Data Cleansing 6    After drop data in water :                           290069
+2018-09-21 12:00:06  Data Cleansing 7    After drop passenger count <1 and >6:                289015
+-----
+2018-09-21 12:00:07  Time Feature   1 added:  hour_of_day
+2018-09-21 12:00:07  Time Feature   2 added:  day_of_week
+2018-09-21 12:00:07  Time Feature   3 added:  day_of_month
+2018-09-21 12:00:07  Time Feature   4 added:  day_of_year
+2018-09-21 12:00:07  Time Feature   5 added:  week_of_year
+2018-09-21 12:00:07  Time Feature   6 added:  month
+2018-09-21 12:00:07  Time Feature   7 added:  quarter
+2018-09-21 12:00:07  Time Feature   8 added:  year
+2018-09-21 12:00:08  Time Feature   9 added:  period_of_day
+2018-09-21 12:00:08  pickup_datetime dropped
+-----
+2018-09-21 12:00:08  Dist Feature   1 added:  longitude_distance
+2018-09-21 12:00:08  Dist Feature   2 added:  latitude_distance
+2018-09-21 12:00:08  Dist Feature   3 added:  itude_dist
+2018-09-21 12:00:08  Dist Feature   4 added:  haversine
+2018-09-21 12:00:08  Dist Feature   5 added:  bearing
+2018-09-21 12:00:11  Dist Feature   6 added:  pickup_long_blk_idx
+2018-09-21 12:00:14  Dist Feature   7 added:  pickup_lat_blk_idx
+2018-09-21 12:00:16  Dist Feature   8 added:  dropoff_long_blk_idx
+2018-09-21 12:00:19  Dist Feature   9 added:  dropoff_lat_blk_idx
+2018-09-21 12:00:19  Dist Feature  10 added:  itude_dist_sin
+2018-09-21 12:00:19  Dist Feature  11 added:  itude_dist_cos
+2018-09-21 12:00:19  Dist Feature  12 added:  itude_dist_sin_sqrd
+2018-09-21 12:00:19  Dist Feature  13 added:  itude_dist_cos_sqrd
+2018-09-21 12:00:27  Dist Feature  15 added:  itude_mht_dist_60_deg
+pickup_popular_zone
+dropoff_popular_zone
+trip_route
+2018-09-21 12:00:46  Dist Feature  24 added:  mht60_dist_pkp_to_ctr
+2018-09-21 12:00:51  Dist Feature  25 added:  mht60_dist_ctr_to_dpf
+2018-09-21 12:00:55  Dist Feature  26 added:  mht60_dist_pkp_to_jfk
+2018-09-21 12:01:00  Dist Feature  27 added:  mht60_dist_jfk_to_dpf
+2018-09-21 12:01:05  Dist Feature  28 added:  mht60_dist_pkp_to_ewr
+2018-09-21 12:01:10  Dist Feature  29 added:  mht60_dist_ewr_to_dpf
+2018-09-21 12:01:14  Dist Feature  30 added:  mht60_dist_pkp_to_lgr
+2018-09-21 12:01:19  Dist Feature  31 added:  mht60_dist_lgr_to_dpf
+-----
+2018-09-21 12:01:19  Time Feature   1 added:  hour_of_day
+2018-09-21 12:01:19  Time Feature   2 added:  day_of_week
+2018-09-21 12:01:19  Time Feature   3 added:  day_of_month
+2018-09-21 12:01:19  Time Feature   4 added:  day_of_year
+2018-09-21 12:01:19  Time Feature   5 added:  week_of_year
+2018-09-21 12:01:19  Time Feature   6 added:  month
+2018-09-21 12:01:19  Time Feature   7 added:  quarter
+2018-09-21 12:01:19  Time Feature   8 added:  year
+2018-09-21 12:01:19  Time Feature   9 added:  period_of_day
+2018-09-21 12:01:19  pickup_datetime dropped
+-----
+2018-09-21 12:01:19  Dist Feature   1 added:  longitude_distance
+2018-09-21 12:01:19  Dist Feature   2 added:  latitude_distance
+2018-09-21 12:01:19  Dist Feature   3 added:  itude_dist
+2018-09-21 12:01:19  Dist Feature   4 added:  haversine
+2018-09-21 12:01:19  Dist Feature   5 added:  bearing
+2018-09-21 12:01:19  Dist Feature   6 added:  pickup_long_blk_idx
+2018-09-21 12:01:19  Dist Feature   7 added:  pickup_lat_blk_idx
+2018-09-21 12:01:19  Dist Feature   8 added:  dropoff_long_blk_idx
+2018-09-21 12:01:20  Dist Feature   9 added:  dropoff_lat_blk_idx
+2018-09-21 12:01:20  Dist Feature  10 added:  itude_dist_sin
+2018-09-21 12:01:20  Dist Feature  11 added:  itude_dist_cos
+2018-09-21 12:01:20  Dist Feature  12 added:  itude_dist_sin_sqrd
+2018-09-21 12:01:20  Dist Feature  13 added:  itude_dist_cos_sqrd
+2018-09-21 12:01:20  Dist Feature  15 added:  itude_mht_dist_60_deg
+2018-09-21 12:01:20  Dist Feature  24 added:  mht60_dist_pkp_to_ctr
+2018-09-21 12:01:20  Dist Feature  25 added:  mht60_dist_ctr_to_dpf
+2018-09-21 12:01:20  Dist Feature  26 added:  mht60_dist_pkp_to_jfk
+2018-09-21 12:01:21  Dist Feature  27 added:  mht60_dist_jfk_to_dpf
+2018-09-21 12:01:21  Dist Feature  28 added:  mht60_dist_pkp_to_ewr
+2018-09-21 12:01:21  Dist Feature  29 added:  mht60_dist_ewr_to_dpf
+2018-09-21 12:01:21  Dist Feature  30 added:  mht60_dist_pkp_to_lgr
+2018-09-21 12:01:21  Dist Feature  31 added:  mht60_dist_lgr_to_dpf
+-----
+Does Train feature equal test feature?:  True
+df_train Shape:  (289015, 84)
+df_test  Shape:  (9914, 84)
+                               pickup_longitude                            ...                             fare_by_hour_of_day_day_of_week_month_year_percentile_20
+key                                                                        ...
+2009-06-15 17:26:21.0000001          -73.844311                            ...                                                                          5.22
+2010-01-05 16:52:16.0000002          -74.016048                            ...                                                                          4.90
+2011-08-18 00:35:00.00000049         -73.982738                            ...                                                                          5.38
+2012-04-21 04:30:42.0000001          -73.987130                            ...                                                                          4.50
+2010-03-09 07:51:00.000000135        -73.968095                            ...                                                                          4.90
+
+[5 rows x 84 columns]
+                             pickup_longitude                            ...                             fare_by_hour_of_day_day_of_week_month_year_percentile_20
+key                                                                      ...
+2015-01-27 13:08:24.0000002        -73.973320                            ...                                                                           6.1
+2015-01-27 13:08:24.0000003        -73.986862                            ...                                                                           6.1
+2011-10-08 11:53:44.0000002        -73.982524                            ...                                                                           4.9
+2012-12-01 21:12:12.0000002        -73.981160                            ...                                                                           6.5
+2012-12-01 21:12:12.0000003        -73.966046                            ...                                                                           6.5
+
+[5 rows x 84 columns]
+----------
+Light Gradient Boosting Regressor:
+[LightGBM] [Info] Total Bins 9638
+[LightGBM] [Info] Number of data: 231212, number of used features: 84
+[LightGBM] [Info] Start training from score 11.260248
+Training until validation scores don't improve for 125 rounds.
+[500]   valid_0's rmse: 3.20658
+Early stopping, best iteration is:
+[639]   valid_0's rmse: 3.19901
+RMSE:  3.199011287043338
+[LightGBM] [Info] Total Bins 9638
+[LightGBM] [Info] Number of data: 231212, number of used features: 84
+[LightGBM] [Info] Start training from score 11.267066
+Training until validation scores don't improve for 125 rounds.
+[500]   valid_0's rmse: 3.00634
+Early stopping, best iteration is:
+[725]   valid_0's rmse: 2.99594
+RMSE:  2.9959405826065324
+[LightGBM] [Info] Total Bins 9638
+[LightGBM] [Info] Number of data: 231212, number of used features: 84
+[LightGBM] [Info] Start training from score 11.247665
+Training until validation scores don't improve for 125 rounds.
+[500]   valid_0's rmse: 4.07471
+Early stopping, best iteration is:
+[530]   valid_0's rmse: 4.0716
+RMSE:  4.071595602581762
+[LightGBM] [Info] Total Bins 9638
+[LightGBM] [Info] Number of data: 231212, number of used features: 84
+[LightGBM] [Info] Start training from score 11.275239
+Training until validation scores don't improve for 125 rounds.
+[500]   valid_0's rmse: 3.09289
+Early stopping, best iteration is:
+[874]   valid_0's rmse: 3.08535
+RMSE:  3.085353912501397
+[LightGBM] [Info] Total Bins 9638
+[LightGBM] [Info] Number of data: 231212, number of used features: 84
+[LightGBM] [Info] Start training from score 11.275646
+Training until validation scores don't improve for 125 rounds.
+[500]   valid_0's rmse: 3.01528
+[1000]  valid_0's rmse: 3.00791
+Early stopping, best iteration is:
+[948]   valid_0's rmse: 3.00581
+RMSE:  3.0058078426686405
